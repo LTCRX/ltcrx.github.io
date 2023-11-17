@@ -1,0 +1,31 @@
+
+
+.titulo {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem;
+  }
+  
+  .subtitulo {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .paragrafo {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #555;
+  }
+
+#container{
+    margin-bottom: 200px;
+}
+
+.home{
+    margin-top: 3000px;
+}
