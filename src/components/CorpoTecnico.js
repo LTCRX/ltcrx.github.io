@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function CorpoTecnico() {
+const   CorpoTecnico = () => {
     return (
         <Container fluid className="m-4">
             <Row className="justify-content-center">

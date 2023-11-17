@@ -1,6 +1,32 @@
-header {
+.logo{
+    width: 425px;
+    height: 190px;
+}
+
+
+.nav-flex{
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 0;
+    font-size: 15px;
+    transition: 0.3s; margin: 0; 
+     list-style: none;
+    font-size: 15px;
+    transition: 0.3s; */
+}
+
+#navbar{
     width: 100%;
-    background-color: rgb(2, 255, 255);
+    background-color: rgb(255, 254, 254);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
     z-index: 997;
+}
+
+.link{
+    padding-right: 30px;
+    font-size: 15px;
+    color: #000000;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 7;
 }
