@@ -30,7 +30,7 @@
 }
 
 .title-home {
-    text-align: justify;
+    text-align:left;
     text-justify: inter-word;
     margin: 1rem;
     margin-left: 30px;
@@ -76,12 +76,12 @@
 
 
 #background-h1{
-  color: #cc0000;
+  color: #c63e2d;
 }
 
 #background-h2{
   margin-top: 80px;
-  color: #cc0000;
+  color: #c63e2d;
 }
 
 
