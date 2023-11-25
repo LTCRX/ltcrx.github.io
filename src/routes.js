@@ -4,6 +4,7 @@ import Instalacoes from './pages/Instalacoes'
 import CorpoTecnicoPage from './pages/CorpoTecnico'
 import Agendamento from './pages/AgendamentodeServicos'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 function RoutesApp(){
@@ -16,6 +17,8 @@ function RoutesApp(){
             <Route path="/corpo-tecnico" element={<CorpoTecnicoPage/>}/>
             <Route path="/agendamento-de-servicos" element={<Agendamento/>}/>
         </Routes>
+        <Footer/>
+
         </Routers>
     )
 }
