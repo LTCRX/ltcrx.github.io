@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 
-const   CorpoTecnico = () => {
+
+function  CorpoTecnico ()  {
     return (
-        <Container fluid className="m-4">
-            <Row className="justify-content-center">
-                <Col xs={12} md={10}>
+     
+            <div className="justify-content-center">
+            
                     <h3 id="corpo-tecnico" style={{
                         textAlign: "justify",
                         textJustify: "inter-word",
@@ -25,9 +25,9 @@ const   CorpoTecnico = () => {
                         Vários desses professores são orientadores acadêmicos de alunos de mestrado e doutorado no Programa de Pós-Graduação em Energia e Tecnologias Nucleares do Departamento de Energia Nuclear (DEN) da Universidade Federal de Pernambuco (UFPE).
 
                     </p>
-                </Col>
-            </Row>
-        </Container>
+            
+            </div>
+
     );
 }
 

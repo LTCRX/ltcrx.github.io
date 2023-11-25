@@ -1,15 +1,52 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
 import './style.css'
+import homeBackground from '../icons/home-background.jpg';
 
 const Home = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Container fluid className="m-4"  id='container'>
-      <Row className="justify-content-center" >
-        <Col xs={12} md={10}>
-          <h2 id="home" className="titulo">Laboratório de Tomografia Computadorizada de Raios X (LTC-RX)</h2>
-          <h3 className="subtitulo">Multiusuário e Multidisciplinar</h3>
-          <p className="paragrafo">
+    <div>
+      <div className={`background-container ${scrolled ? 'scrolled' : ''}`}>
+        <img
+          src={homeBackground}
+          alt="Logo"
+          id="logo"
+          style={{
+            width: '100%',
+            height: '350px',
+            margin: '0',
+            padding: '0',
+            objectFit: 'cover',
+            opacity: 1,
+
+          }}
+        />
+        <div className='text-background'>
+        <h1 className="overlay-text" id='background-h1'>Multiusuário e Multidisciplinar</h1>
+        <br></br>
+        <h2 className="overlay-text" id='background-h2'>Laboratório de Tomografia Computadorizada de Raios X (LTC-RX)</h2>
+        </div>
+      </div>
+      <div className={`custom-container ${scrolled ? 'scrolled' : ''}`}>
+        <div className="custom-content">
+            <div className='text-container'>
+          <h2 className="title-home">Laboratório de Tomografia Computadorizada de Raios X (LTC-RX)</h2>
+          <h3 className="subtitle-home">Multiusuário e Multidisciplinar</h3>
+          <p className="paragraph-home">
             O LTC-RX foi concebido, no início de 2010, com o objetivo de ampliar,
             consolidar e estabelecer novas parcerias com instituições nacionais e
             internacionais de ensino e pesquisa, e com o setor produtivo, em particular
@@ -49,9 +86,11 @@ const Home = () => {
             e a reconstrução de imagens 3D de alta resolução de amostras, possibilitando a
             determinação de vários parâmetros de interesse dos usuários.
           </p>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+      </div>
+    </div>
+  
   );
 };
 
