@@ -24,6 +24,7 @@ function Header() {
                         <Link className='link' as={Link} to="/instalacoes">Instalações</Link>
                         <Link className='link' as={Link} to="/corpo-tecnico">Corpo técnico</Link>
                         <Link className='link' as={Link} to="/agendamento-de-servicos">Agendamento de serviços</Link>
+                        <Link className='link' as={Link} to="/signup" ><button id='button'>SignUp</button></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
