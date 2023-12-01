@@ -3,6 +3,7 @@ import Inicio from './pages/Inicio'
 import Instalacoes from './pages/Instalacoes'
 import CorpoTecnicoPage from './pages/CorpoTecnico'
 import Agendamento from './pages/AgendamentodeServicos'
+import SignUp from './pages/SignUp'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -16,6 +17,7 @@ function RoutesApp(){
             <Route path="/instalacoes" element={<Instalacoes/>}/>
             <Route path="/corpo-tecnico" element={<CorpoTecnicoPage/>}/>
             <Route path="/agendamento-de-servicos" element={<Agendamento/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
         </Routes>
         <Footer/>
 

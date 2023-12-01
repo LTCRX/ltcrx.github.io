@@ -18,3 +18,18 @@
     text-decoration: none;
     font-weight: 7;
 }
+
+#button {
+    background-color: #bb1833; 
+    color: white; 
+    padding: 5px; 
+    font-size: 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+  }
+  
+  #button:hover {
+    background-color: #791223; 
+  }
+  
