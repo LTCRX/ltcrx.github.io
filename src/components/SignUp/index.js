@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import './style.css'
+import './SignUp.css'
 
 export default function Form() {
   const [name, setName] = useState('');

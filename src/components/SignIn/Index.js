@@ -1,61 +1,91 @@
 import { useState } from 'react';
 import axios from 'axios';
-import './style.css';
+import './sigIn.css';
 
-export default function LoginForm() {
-  const [loginUsername, setLoginUsername] = useState('');
-  const [loginPassword, setLoginPassword] = useState('');
+export default function SignInForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleLoginUsername = (e) => {
-    setLoginUsername(e.target.value);
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    setSubmitted(false);
   };
 
-  const handleLoginPassword = (e) => {
-    setLoginPassword(e.target.value);
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+    setSubmitted(false);
   };
 
-  const handleLoginSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await axios.post(
-        'https://32paa5ucoc.execute-api.us-east-1.amazonaws.com/dev/api/v1/token',
-        new URLSearchParams({
-          grant_type: 'password',
-          username: loginUsername,
-          password: loginPassword,
-          scope: '',
-          client_id: '',  // Substitua pelo seu client_id
-          client_secret: '',  // Substitua pelo seu client_secret
-        }).toString(),
-        {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+    if (email === '' || password === '') {
+      setError(true);
+      setErrorMessage('Por favor, insira todos os campos.');
+    } else {
+      try {
+        const response = await axios.post(
+          'https://32paa5ucoc.execute-api.us-east-1.amazonaws.com/dev/api/v1/token/',
+          {
+            grant_type: 'password',
+            username: email, // Assuming the email is used as the username for signIn
+            password: password,
           },
-        }
-      );
+          {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+          }
+        );
 
-      const token = response.data.access_token;
-      console.log('Token de acesso (JWT):', token);
-    } catch (error) {
-      console.error('Erro ao fazer login:', error.message);
+        if (response.status === 200) {
+          setSubmitted(true);
+          setError(false);
+
+          // Store the token in localStorage or a secure storage method of your choice
+          localStorage.setItem('jwt_token', response.data.access_token);
+        } else {
+          setError(true);
+        }
+      } catch (error) {
+        setError(true);
+        setErrorMessage('Credenciais inválidas. Por favor, tente novamente.');
+      }
     }
   };
 
   return (
-    <form className='form-login'>
-      <h1 className='h1'>Login</h1>
-      <p className='p'>Digite os seus dados de login no campo abaixo.</p>
+    <div className="form1">
+      <form className="form-login1">
+        {submitted && !error && (
+          <div className="success">
+            <p>Login bem-sucedido!</p>
+          </div>
+        )}
 
-      <label className="label">Username</label>
-      <input onChange={handleLoginUsername} className="input" value={loginUsername} type="text" />
+        {error && (
+          <div className="error1">
+            <p>{errorMessage}</p>
+          </div>
+        )}
 
-      <label className="label">Senha</label>
-      <input onChange={handleLoginPassword} className="input" value={loginPassword} type="password" />
+        <h1 className="h1">Login</h1>
+        <p className="p1">Digite seus dados de login no campo abaixo.</p>
 
-      <button onClick={handleLoginSubmit} className="button" type="submit">
-        LOGIN
-      </button>
-    </form>
+        <label className="label1">Email</label>
+        <input onChange={handleEmail} className="input" value={email} type="email" />
+
+        <label className="label1">Senha</label>
+        <input onChange={handlePassword} className="input" value={password} type="password" />
+
+        <button onClick={handleSubmit} className="button1" type="submit">
+          ENTRAR
+        </button>
+      </form>
+    </div>
   );
 }
+
