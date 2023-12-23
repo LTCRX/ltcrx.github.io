@@ -5,6 +5,8 @@ import CorpoTecnicoPage from './pages/CorpoTecnico'
 import Agendamento from './pages/AgendamentodeServicos'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Form from './components/SignUp'
+import LoginForm from './components/SignIn/Index'
 
 
 function RoutesApp(){
@@ -16,6 +18,8 @@ function RoutesApp(){
             <Route path="/instalacoes" element={<Instalacoes/>}/>
             <Route path="/corpo-tecnico" element={<CorpoTecnicoPage/>}/>
             <Route path="/agendamento-de-servicos" element={<Agendamento/>}/>
+            <Route path="/criar-conta" element={<Form/>}/>
+            <Route path="/entrar" element={<LoginForm/>}/>
         </Routes>
         <Footer/>
 

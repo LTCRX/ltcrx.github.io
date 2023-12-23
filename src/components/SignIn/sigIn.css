@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+    
+
+.form1 {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  .form-login1{display: flex;
+    flex-direction: column;
+    background-color: #a80c26;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px}
+  
+    .form-login1 h1 {
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        font-size: 2.3em;
+    }
+    
+    .p1 {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    }
+
+    .input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    }
+
+    .label1 {
+        color: #fff;
+    font-size: 14px;
+    }
+  
+.button1{
+    background-color: rgb(231, 231, 231);
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+}
+
+    .button1:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+
+}
+  
