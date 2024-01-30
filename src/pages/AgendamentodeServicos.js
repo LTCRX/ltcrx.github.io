@@ -22,7 +22,7 @@ const Agendamento = () => {
                     <Col className="text-center">
                         <a
                             href={FormExample}
-                            download="formulario_exemplo"
+                            download="formulario_exemplo.docx"
                             target="_blank"
                             rel="noreferrer"
                         >
