@@ -1,7 +1,6 @@
 import { BrowserRouter as Routers, Route, Routes} from 'react-router-dom'
 import Inicio from './pages/Inicio'
 import Instalacoes from './pages/Instalacoes'
-import CorpoTecnicoPage from './pages/CorpoTecnico'
 import Agendamento from './pages/AgendamentodeServicos'
 import Header from './components/Header'
 import Footer from './components/Footer'
