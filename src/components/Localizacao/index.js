@@ -12,6 +12,7 @@ export default class index extends Component {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
+
     );
   }
 }
