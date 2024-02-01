@@ -1,11 +1,11 @@
 import React from "react";
-import CorpoTecnico from "../components/CorpoTecnico";
 
-const   CorpoTecnicoPage = () => {
+function CorpoTecnico() {
   return (
-  <div className="removing-edge">
-    <CorpoTecnico />
-  </div>
+    <>
+      <h1>CorpoTecnico</h1>
+    </>
   );
 }
-export default CorpoTecnicoPage;
+
+export default CorpoTecnico;
