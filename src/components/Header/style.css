@@ -1,0 +1,8 @@
+.PrimaryColor { background-color: fff;}
+
+.ColorText {color:#000}
+
+.changeColorOnHover:hover {
+    color: #C23522; 
+    cursor: pointer; 
+}
