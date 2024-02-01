@@ -72,7 +72,7 @@ function Header() {
                 <li className="nav-item">
                   <Link
                     to="/"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Home{" "}
@@ -81,7 +81,7 @@ function Header() {
                 <li className="nav-item">
                   <Link
                     to="/Sobre"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Sobre{" "}
@@ -90,7 +90,7 @@ function Header() {
                 <li className="nav-item">
                   <Link
                     to="/Localizacao"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Localização{" "}
@@ -99,7 +99,7 @@ function Header() {
                 <li className="nav-item">
                   <Link
                     to="/Instalacoes"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Instalações{" "}
@@ -108,7 +108,7 @@ function Header() {
                 <li className="nav-item">
                   <Link
                     to="/CorpoTecnico"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Corpo Técnico{" "}
@@ -117,7 +117,7 @@ function Header() {
                 <li className="nav-item ">
                   <Link
                     to="/Agendamento"
-                    className="nav-link changeColorOnHover fs-6 fw-bold"
+                    className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
                     Agendamento de Serviços{" "}
