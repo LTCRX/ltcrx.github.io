@@ -1,0 +1,38 @@
+/* MeuComponente.css */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.images {
+  display: flex;
+  gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.images img {
+  flex: 1; /* Cada imagem ocupa a largura disponível */
+  max-width: 300px;
+  height: auto;
+  max-height: 500px; /* Altura máxima das imagens */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .images {
+    flex-direction: column; /* Imagens uma abaixo da outra em dispositivos móveis */
+  }
+
+  .images img {
+    max-width: 100%; /* Largura completa em dispositivos móveis */
+    max-height: none; /* Remover a altura máxima em dispositivos móveis */
+  }
+}
