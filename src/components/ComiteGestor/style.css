@@ -1,0 +1,9 @@
+.card-img-custom {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* Ensure the image fits within the container without deformation */
+    border-radius: 10px; /* Add border-radius for rounded corners, if desired */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure it's a block-level element to use margin auto */
+    padding: 10px; /* Add padding to the image */
+}
