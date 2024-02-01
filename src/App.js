@@ -1,12 +1,39 @@
-import React from 'react';
-import RoutesApp from './routes';
+import "./Assets/css/App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App () {
-    return (
+import Home from "./pages/Home";
+import Instalacoes from "./pages/Instalacoes";
+import CorpoTecnicoPage from "./pages/CorpoTecnico";
+import Agendamento from "./pages/Agendamento";
+import Sobre from "./pages/Sobre";
+import Localizacao from "./pages/Localizacao";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
     <div>
-        <RoutesApp/>
+      <Router>
+        <div className="page-container">
+          <Header />
+          <div className="content-wrap">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Instalacoes" element={<Instalacoes />} />
+              <Route path="/Sobre" element={<Sobre />} />
+              <Route path="/CorpoTecnicoPage" element={<CorpoTecnicoPage />} />
+              <Route path="/Localizacao" element={<Localizacao />} />
+              <Route path="/Agendamento" element={<Agendamento />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
     </div>
-    );
-  }
-  
-  export default App;
+  );
+}
+
+export default App;
