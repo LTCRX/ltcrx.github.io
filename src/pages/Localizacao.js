@@ -6,7 +6,7 @@ import GpsLocalizacao from "../components/Localizacao";
 function Localizacao() {
   return (
     <>
-      <div className="container-fluid" id="background">
+      <div className="container-fluid">
         <div className="row justify-content-center align-items-center 1000vh">
           <div className="col-12 col-md-8 text-center">
             <TitleLocalizacao />
