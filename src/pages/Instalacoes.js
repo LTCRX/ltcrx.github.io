@@ -1,12 +1,10 @@
 import React from "react";
-import Instalacoes from "../components/Instalacoes";
 
-
-function InstalacoesPage() {
+function Instalacoes() {
   return (
-  <div className="removing-edge">
-    <Instalacoes/>
-  </div>
+    <>
+      <h1>Instalacoes</h1>
+    </>
   );
 }
-export default InstalacoesPage;
+export default Instalacoes;
