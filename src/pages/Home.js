@@ -1,9 +1,15 @@
 import React from "react";
+import "../Assets/css/home.css";
+import HomeVideo from "../components/HomeVideo";
 
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <div className="fullscreen-container">
+        <div className="fullscreen-content">
+          <HomeVideo />
+        </div>
+      </div>
     </>
   );
 }
