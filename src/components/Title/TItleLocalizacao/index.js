@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 export default class index extends Component {
-  render() {
-    return (
-      <p
-        className="fs-1 text-center"
-        style={{ marginTop: 50, marginBottom: 50 }}
-      >
-        Localização
-      </p>
-    );
-  }
+    render() {
+        return (
+            <h2
+                className="fs-1 text-center"
+                style={{marginTop: 25, marginBottom: 20}}
+            > Localização
+            </h2>
+        );
+    }
 }
