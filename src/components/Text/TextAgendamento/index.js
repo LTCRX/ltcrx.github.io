@@ -9,7 +9,7 @@ export default class Index extends Component {
 
     return (
       <div>
-        <p className="fs-4" style={estiloTexto}>
+        <p className="fs-6" style={estiloTexto}>
           Ficou interessado(a) em nosso serviço? Preencha o formulário abaixo e,
           em seguida, envie-nos em anexo pelo e-mail que consta abaixo. O
           formulário deve ser enviado no formato PDF.

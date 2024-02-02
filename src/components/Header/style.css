@@ -1,20 +1,30 @@
-.nav-flex{
-    display: flex;
-    justify-content: flex-end;
-     margin: 0;
+.PrimaryColor { background-color: fff;}
+
+.ColorText {color:#000}
+
+.changeColorOnHover:hover {
+    color: #C23522; 
+    cursor: pointer; 
 }
 
-#navbar{
-    width: 100%;
-    background-color: rgb(255, 254, 254);
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+.linkWithUnderline {
+  position: relative;
+  text-decoration: none;
 }
 
-.link{
-    padding-right: 30px;
-    font-size: 15px;
-    color: #000000;
-    transition: 0.3s;
-    text-decoration: none;
-    font-weight: 7;
+.linkWithUnderline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 100%;  /* inicialmente fora da tela à direita */
+  height: 2px;  /* altura da linha sublinhada inicial */
+  background-color: transparent;  /* cor da linha sublinhada inicial (transparente) */
+  transition: left 0.3s, background-color 0.3s;  /* adicionar transição para suavizar o efeito */
 }
+
+.linkWithUnderline:hover::after {
+  left: 0;  /* mover para a posição inicial (0%) ao passar o mouse */
+  background-color: #000;  /* cor da linha sublinhada ao passar o mouse */
+}
+

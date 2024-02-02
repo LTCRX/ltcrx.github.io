@@ -1,0 +1,11 @@
+.custom-color {
+  background-color: #C23522;
+  color: #fff; 
+  
+&:hover {
+    background-color: #a82b1d; 
+    color: #fff; 
+
+}
+}
+

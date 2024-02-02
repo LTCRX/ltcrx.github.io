@@ -1,19 +1,26 @@
 import React, { Component } from "react";
 import "./style.css";
+import {Button} from "react-bootstrap";
+import FormExample from "../../../docs/form.docx"
 
 export default class index extends Component {
   render() {
     return (
-      <div
-        class="d-grid gap-2 col-6 mx-auto"
-        style={{
-          width: 300,
-          height: 60,
+      <div style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px"
         }}
       >
-        <button class="btn custom-color" type="button">
-          Download do Formulário
-        </button>
+          <a
+              href={FormExample}
+              download="formulario_exemplo.docx"
+              target="_blank"
+              rel="noreferrer"
+          >
+              <Button variant="danger">Download do Formulário</Button>
+          </a>
       </div>
     );
   }
