@@ -4,6 +4,7 @@ import "./style.css";
 import ImageHeader from "../../Assets/img/logo.png";
 
 function Header() {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg" id="primary-color">
@@ -130,5 +131,6 @@ function Header() {
       </nav>
     </>
   );
+
 }
 export default Header;
