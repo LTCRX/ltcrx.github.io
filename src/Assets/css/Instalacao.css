@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  flex: 0 0 48%;
+  margin: 10px; /* Adicionado espaçamento ao redor do bloco de imagem */
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 4%;
+}
