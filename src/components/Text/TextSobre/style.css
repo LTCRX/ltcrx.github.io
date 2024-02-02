@@ -1,0 +1,38 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.images {
+  display: flex;
+  gap: 10px; 
+}
+
+.images img {
+  flex: 1; 
+  max-width: 300px;
+  height: auto;
+  max-height: 500px; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .images {
+    flex-direction: column;
+  }
+
+  .images img {
+    max-width: 100%; 
+    max-height: none;
+  }
+}

@@ -21,6 +21,7 @@ function Header() {
                 <Navbar.Collapse className='nav-flex'>
                     <Nav>
                         <Link className='link' as={Link} to="/">Home</Link>
+                        <Link className='link' as={Link} to="/sobre">Sobre</Link>
                         <Link className='link' as={Link} to="/instalacoes">Instalações</Link>
                         <Link className='link' as={Link} to="/agendamento-de-servicos">Agendamento de serviços</Link>
                         <Link className='link' as={Link} to="/comite-gestor">Comitê Gestor</Link>
