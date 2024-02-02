@@ -20,8 +20,8 @@ export default class index extends Component {
             />
             <div className="overlay">
               <div className="content">
-                <p className="fs-1">Multiusuário e Multidisciplinar</p>
-                <p className="fs-3">
+                <h1 className="fs-1">Multiusuário e Multidisciplinar</h1>
+                <p className="fs-7">
                   Laboratório de Tomografia Computadorizada de Raios X (LTC-RX)
                 </p>
                 <ButtonHome />
