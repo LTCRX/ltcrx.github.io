@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Instalacoes from "./pages/Instalacoes";
 import CorpoTecnico from "./pages/CorpoTecnico";
 import AgendamentoPage from "./pages/AgendamentoPage";
-import Sobre from "./pages/Sobre";
+import SobrePage from "./pages/SobrePage";
 import LocalizacaoPage from "./pages/LocalizacaoPage";
 
 import Header from "./components/Header";
@@ -22,10 +22,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Instalacoes" element={<Instalacoes />} />
-              <Route path="/Sobre" element={<Sobre />} />
+              <Route path="/SobrePage" element={<SobrePage />} />
               <Route path="/CorpoTecnico" element={<CorpoTecnico />} />
               <Route path="/Localizacao" element={<LocalizacaoPage />} />
-              <Route path="/AgendamentoPage" element={<AgendamentoPage />} />
+              <Route path="/Agendamento" element={<AgendamentoPage />} />
             </Routes>
           </div>
         </div>

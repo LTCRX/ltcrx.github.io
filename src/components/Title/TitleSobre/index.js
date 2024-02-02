@@ -3,12 +3,12 @@ import React, { Component } from "react";
 export default class index extends Component {
   render() {
     return (
-      <p
+      <h2
         className="fs-1 text-center"
-        style={{ marginTop: 50, marginBottom: 50 }}
+        style={{ marginTop: 20, marginBottom: 5 }}
       >
         Sobre o LTC-RX
-      </p>
+      </h2>
     );
   }
 }
