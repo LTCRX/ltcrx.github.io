@@ -6,7 +6,7 @@ import ImageHeader from "../../Assets/img/logo.png";
 function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg PrimaryColor">
+      <nav className="navbar navbar-expand-lg" id="primary-color">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand fs-4">
             <img src={ImageHeader} alt="Bootstrap" width="40" height="40"></img>

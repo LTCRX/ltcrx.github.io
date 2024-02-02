@@ -1,19 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
 
-const Index = () => {
+export default class index extends Component {
+  render() {
     return (
-        <div className="d-flex align-items-center justify-content-center">
-            <div>
-                <Link to="/agendamento-de-servicos">
-                    <Button variant="danger" size="lg" className="mb-2">
-                        Agende nosso serviço
-                    </Button>
-                </Link>
-            </div>
+      <div className="d-flex align-items-center justify-content-center ">
+        <div>
+          <Link
+            to="/Agendamento"
+            type="button"
+            className="btn custom-color btn-lg mb-2"
+          >
+            Agende nosso serviço
+          </Link>
         </div>
+      </div>
     );
-};
-
-export default Index;
+  }
+}
