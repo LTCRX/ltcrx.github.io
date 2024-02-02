@@ -1,0 +1,48 @@
+
+.corpo-tecnico-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.corpo-tecnico-content {
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.corpo-tecnico-cards {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.corpo-tecnico-card {
+  border: 1px solid #ccc;
+  margin: 0 10px 20px; 
+  max-width: 300px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4%;
+}
+
+.corpo-tecnico-img {
+  max-width: 560px;
+  max-height: 560px;
+  width: 280px;
+  height: 280px;
+  border-radius: 4%;
+}
+
+.corpo-tecnico-card-content {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .corpo-tecnico-card {
+    margin: 0 0 20px; 
+  }
+}
