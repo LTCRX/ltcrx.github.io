@@ -11,6 +11,7 @@ import SobrePage from "./pages/SobrePage";
 import LocalizacaoPage from "./pages/LocalizacaoPage";
 
 import Header from "./components/Header";
+import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/Agendamento" element={<AgendamentoPage />} />
             </Routes>
           </div>
+          <LoadingScreen />
         </div>
       </Router>
     </div>
