@@ -116,7 +116,7 @@ function Header() {
                 </li>
                 <li className="nav-item ">
                   <Link
-                    to="/Agendamento"
+                    to="/AgendamentoPage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >

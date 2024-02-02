@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Instalacoes from "./pages/Instalacoes";
 import CorpoTecnico from "./pages/CorpoTecnico";
-import Agendamento from "./pages/Agendamento";
+import AgendamentoPage from "./pages/AgendamentoPage";
 import Sobre from "./pages/Sobre";
 import LocalizacaoPage from "./pages/LocalizacaoPage";
 
@@ -25,7 +25,7 @@ function App() {
               <Route path="/Sobre" element={<Sobre />} />
               <Route path="/CorpoTecnico" element={<CorpoTecnico />} />
               <Route path="/Localizacao" element={<LocalizacaoPage />} />
-              <Route path="/Agendamento" element={<Agendamento />} />
+              <Route path="/AgendamentoPage" element={<AgendamentoPage />} />
             </Routes>
           </div>
         </div>
