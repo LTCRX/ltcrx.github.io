@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import ImageHeader from "../../Assets/img/logo.png";
+import ImageHeader from "../../Assets/img/navbar_icon.png";
 
 function Header() {
   return (
@@ -10,7 +10,8 @@ function Header() {
         <div className="container-fluid">
           <Link to="/" className="navbar-brand fs-4">
             <img src={ImageHeader} alt="Bootstrap" width="40" height="40"></img>
-            LTC-RX
+            <strong>LTC-</strong>
+            <strong style={{ color: "#C23522" }}>RX</strong>
           </Link>
           <button
             className="navbar-toggler"
@@ -53,7 +54,6 @@ function Header() {
                   width="40"
                   height="40"
                 ></img>
-                LTC-RX
               </h5>
               <button
                 type="button"
