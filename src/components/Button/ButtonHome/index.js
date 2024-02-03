@@ -8,7 +8,7 @@ export default class index extends Component {
       <div className="d-flex align-items-center justify-content-center ">
         <div>
           <Link
-            to="/Agendamento"
+            to="/AgendamentoPage"
             type="button"
             className="btn custom-color btn-lg mb-2"
           >

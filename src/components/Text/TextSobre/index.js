@@ -1,6 +1,7 @@
 import React from "react";
 import ImgSobre1 from "../../../Assets/img/sobre1.jpeg";
 import ImgSobre2 from "../../../Assets/img/sobre2.png";
+import ImgSobre3 from "../../../Assets/img/computador_esquerda.jpeg";
 import "./style.css";
 
 const TextSobre = () => {
@@ -43,8 +44,7 @@ const TextSobre = () => {
           International Corp.) para apoiar o desenvolvimento de projetos de
           pesquisas relevantes em diversas áreas
         </p>
-      </div>
-      <div className="text">
+        <br />
         <p>
           do conhecimento: Engenharias, Ciências Exatas e da Terra, Ciências
           Agrárias, Ciências Humanas, Ciências Biológicas e Ciências da Saúde. O
@@ -56,9 +56,16 @@ const TextSobre = () => {
           possibilitando a determinação de vários parâmetros de interesse dos
           usuários.
         </p>
-        <div className="images">
-          <img src={ImgSobre1} alt="Imagem 1" />
-          <img src={ImgSobre2} alt="Imagem 2" />
+      </div>
+      <div className="container">
+        <div className="image-container">
+          <img src={ImgSobre1} alt="Imagem 1" className="image" />
+        </div>
+        <div className="image-container">
+          <img src={ImgSobre2} alt="Imagem 2" className="image" />
+        </div>
+        <div className="image-container">
+          <img src={ImgSobre3} alt="Imagem 2" className="image" />
         </div>
       </div>
     </div>
