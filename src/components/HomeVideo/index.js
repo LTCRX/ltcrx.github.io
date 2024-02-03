@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
-
+import HomeVideo from "../../Assets/video/Home_video.mp4";
 import ButtonHome from "../Button/ButtonHome";
 import "./style.css";
 
@@ -11,7 +11,7 @@ export default class index extends Component {
         <div className="App">
           <div className="video-container">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=AFgk0LxCmTM"
+              url={HomeVideo}
               playing
               loop
               muted
