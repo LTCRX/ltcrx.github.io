@@ -9,7 +9,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg" id="primary-color">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand fs-4">
-            <img src={ImageHeader} alt="Bootstrap" width="40" height="40"></img>
+            <img src={ImageHeader} alt="Bootstrap" width="48" height="48" />
             <strong>LTC-</strong>
             <strong style={{ color: "#C23522" }}>RX</strong>
           </Link>
@@ -51,8 +51,8 @@ function Header() {
                 <img
                   src={ImageHeader}
                   alt="Bootstrap"
-                  width="40"
-                  height="40"
+                  width="48"
+                  height="48"
                 ></img>
               </h5>
               <button
