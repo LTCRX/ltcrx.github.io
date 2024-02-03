@@ -12,8 +12,8 @@ const ComiteProfileCard = ({image, profileName, profileTitle, profileEmail}) => 
                 className="card-img-custom"
             />
             <Card.Body className="text-center">
-                <Card.Title>{profileName}</Card.Title>
-                <Card.Text>
+                <Card.Text >
+                    <h5>{profileName}</h5>
                     {profileTitle}
                     <br/>
                     {profileEmail}

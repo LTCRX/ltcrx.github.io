@@ -15,7 +15,7 @@ function CorpoTecnico() {
                 </Col>
             </Row>
             <Row>
-                <Col md={12} className="p-3">
+                <Col md={12} className="p-1">
                     <TitleComite/>
                     <Container fluid>
                         <Stack direction="horizontal"

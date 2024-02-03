@@ -5,7 +5,7 @@ import ComiteProfileCard from "../ComiteProfileCard";
 const CoordenadorProfileCard = () => {
     return <ComiteProfileCard
         image={CoordenadorImg}
-        profileName="Antônio Celso Dantas Antonino"
+        profileName="Antônio C. D. Antonino"
         profileTitle="Coordenador"
         profileEmail="antonio.antonino@ufpe.br"
     />

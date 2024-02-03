@@ -1,6 +1,6 @@
 .card-img-custom {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: contain; /* Ensure the image fits within the container without deformation */
     border-radius: 10px; /* Add border-radius for rounded corners, if desired */
     margin: 0 auto; /* Center the image horizontally */
@@ -9,6 +9,6 @@
 }
 
 .comite-profile-card {
-    width: 350px;
+    width: 300px;
     height: 350px;
 }

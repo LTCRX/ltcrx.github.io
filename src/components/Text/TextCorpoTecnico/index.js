@@ -3,7 +3,7 @@ import React, {Component} from "react";
 export default class index extends Component {
     render() {
         return (
-            <p style={{marginTop: 10}}>
+            <p>
                 Compõe o corpo técnico do <b>LTC-RX</b> técnicos, professores e pesquisadores de produtividade em
                 pesquisa do <b>CNPq</b> que possuem reconhecimento e atuação nacional e internacional em pesquisas
                 multidisciplinares.
