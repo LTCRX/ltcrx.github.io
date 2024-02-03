@@ -17,14 +17,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 100%;  /* inicialmente fora da tela à direita */
-  height: 2px;  /* altura da linha sublinhada inicial */
-  background-color: transparent;  /* cor da linha sublinhada inicial (transparente) */
-  transition: left 0.3s, background-color 0.3s;  /* adicionar transição para suavizar o efeito */
+  left: 100%;  
+  height: 2px;  
+  background-color: transparent;  
+  transition: left 0.3s, background-color 0.3s;  
 }
 
 .linkWithUnderline:hover::after {
-  left: 0;  /* mover para a posição inicial (0%) ao passar o mouse */
-  background-color: #000;  /* cor da linha sublinhada ao passar o mouse */
+  left: 0; 
+  background-color: #000;  
 }
 
