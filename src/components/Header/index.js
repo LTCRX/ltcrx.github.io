@@ -4,7 +4,6 @@ import "./style.css";
 import ImageHeader from "../../Assets/img/logo.png";
 
 function Header() {
-
   return (
     <>
       <nav className="navbar navbar-expand-lg" id="primary-color">
@@ -81,7 +80,7 @@ function Header() {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/Sobre"
+                    to="/SobrePage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
@@ -90,7 +89,7 @@ function Header() {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/Localizacao"
+                    to="/LocalizacaoPage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
@@ -99,7 +98,7 @@ function Header() {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/Instalacoes"
+                    to="/InstalacoesPage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
@@ -108,7 +107,7 @@ function Header() {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/CorpoTecnico"
+                    to="/CorpoTecnicoPage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
@@ -117,7 +116,7 @@ function Header() {
                 </li>
                 <li className="nav-item ">
                   <Link
-                    to="/Agendamento"
+                    to="/AgendamentoPage"
                     className="nav-link changeColorOnHover fs-6 fw-bold linkWithUnderline"
                     aria-current="page"
                   >
@@ -131,6 +130,5 @@ function Header() {
       </nav>
     </>
   );
-
 }
 export default Header;

@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Instalacoes from "./pages/Instalacoes";
-import CorpoTecnico from "./pages/CorpoTecnico";
+import HomePage from "./pages/HomePage";
+import InstalacoesPage from "./pages/InstalacoesPage";
+import CorpoTecnicoPage from "./pages/CorpoTecnicoPage";
 import AgendamentoPage from "./pages/AgendamentoPage";
 import SobrePage from "./pages/SobrePage";
 import LocalizacaoPage from "./pages/LocalizacaoPage";
@@ -21,12 +21,12 @@ function App() {
           <Header />
           <div className="content-wrap">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Instalacoes" element={<Instalacoes />} />
-              <Route path="/Sobre" element={<SobrePage />} />
-              <Route path="/CorpoTecnico" element={<CorpoTecnico />} />
-              <Route path="/Localizacao" element={<LocalizacaoPage />} />
-              <Route path="/Agendamento" element={<AgendamentoPage />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/InstalacoesPage" element={<InstalacoesPage />} />
+              <Route path="/SobrePage" element={<SobrePage />} />
+              <Route path="/CorpoTecnicoPage" element={<CorpoTecnicoPage />} />
+              <Route path="/LocalizacaoPage" element={<LocalizacaoPage />} />
+              <Route path="/AgendamentoPage" element={<AgendamentoPage />} />
             </Routes>
           </div>
           <LoadingScreen />
