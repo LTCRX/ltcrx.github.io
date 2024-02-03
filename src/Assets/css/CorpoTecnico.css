@@ -22,6 +22,7 @@
 .corpo-tecnico-card {
   border: 1px solid #ccc;
   margin: 0 10px 20px; 
+  max-height: 550px;
   max-width: 300px;
   text-align: center;
   padding: 10px;
@@ -30,8 +31,8 @@
 }
 
 .corpo-tecnico-img {
-  max-width: 560px;
-  max-height: 560px;
+  max-width: 350px;
+  max-height: 350px;
   width: 280px;
   height: 280px;
   border-radius: 4%;

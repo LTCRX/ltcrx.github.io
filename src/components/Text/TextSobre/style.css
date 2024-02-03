@@ -17,9 +17,10 @@
 
 .images img {
   flex: 1; 
-  max-width: 300px;
+  max-width: 240px;
   height: auto;
-  max-height: 500px; 
+  max-height: 310px; 
+  border-radius: 4%;
 }
 
 @media (max-width: 768px) {
